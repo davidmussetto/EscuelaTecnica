@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Técnica N1 de Brandsen</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20PX;
+        background-color: #f4f4f4;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+    }
+    header {
+        background: linear-gradient(45deg, green 0%, blue 30%, white 60%, red 90%);
+        color: white;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        padding:30px 30px;
+    }
+    .yoda{
+        width: 200px;
+        height: 3o0px;
+    }
+    .logo {
+        width: 150px;
+    }
+    nav {
+        margin: 30px 0;
+    }
+    #baby-yodas{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(2,1fr) ;
+        margin-left: 20%;
+    }
+    #baby-yoda{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+    .img{
+        height: 200px;
+        width: 300px;
+    }
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: white;
+    }
+    .content {
+        padding: 30px;
+        background: linear-gradient(bisque 90%, #333 95%);
+    }
+    section {
+        margin-bottom: 20px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    h2 {
+        color: #4CAF50;
+    }
+    .sn{
+        margin-left: 0;
+    }
+    .titulos{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    .textos{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .direc{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .logoContenedor{
+        display: flex;
+        justify-content: end;
+    }
+    .foot{
+        color: white;
+        text-align: center;
+        margin: 0;
+        margin-top: 50px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    </style>
+<body>
+    <header>
+        <article class="logoContenedor">
+            <img src="image/logo.png" alt="Logo escuela" class="logo">
+        </article>
+        <h1>Escuela Técnica N°1 de Brandsen</h1>
+        <nav>   
+            <a href="#sobre" class="sn">Sobre Nosotros</a>
+            <a href="#orientacionesLaborales">Orientaciones Laborales</a>
+            <a href="#materias">Materias</a>
+            <a href="#directivos">directivos</a>
+            <a href="#horarios">Horarios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </header>
+
+    <div class="content">
+        <section id="sobre">
+            <h2 class="titulos">Sobre Nosotros</h2>
+            <p class="textos">La Escuela Secundaria Técnica N°1 de Brandsen es una institución educativa con más de 30 años de trayectoria en la formación de técnicos altamente calificados. Nos comprometemos a ofrecer una educación de calidad que prepara a nuestros alumnos/as para los desafíos del mundo laboral.</p>
+        </section>
+
+        <section id="orientacionesLaborales">
+            <h2 class="titulos">orientaciones Laborales</h2>
+            <p class="textos">Ofrecemos una variedad de orientaciones técnicos que cubren diferentes áreas de la tecnología, la industria, la investigacion y el desarrollo. Nuestros programas están diseñados para brindar una formación integral, práctica y completa. Las actuales orientaciones a elegir son:</p>
+            <ul>
+        
+                <li>Técnico Programador</li>
+                <li>Técnico Electro Mecánico</li>
+                <li>Técnico Quimico</li>
+            </ul>
+        </section>
+
+        <section id="materias">
+            <h2 class="titulos">Areas</h2>
+            <h3>Técnico Programador</h3>
+            <p class="textos">En este curso, los estudiantes aprenden sobre circuitos electrónicos, microcontroladores, sistemas de automatización, programación, manejo de datos, desarrollo y diseño de programas y paginas webs, etc. Algunas de las materias incluidas son:</p>
+            <ul>
+                <li><strong>Programacion:</strong> Diseño y desarrollo de programas.</li>
+                <li><strong>Desarrollo de Aplicaciones Web:</strong> Diseño y desarrollo de paginas web.</li>
+                <li><strong>Modelos y Sistemas:</strong> Graficacion y planeacion en el desarrollo de programas para distintas funcionalidades.</li>
+            </ul>
+
+            <h3>Técnico Electro Mecanico</h3>
+            <p class="textos">Este curso prepara a los alumnos en áreas como circuitos hogareños, manejos de maquinas industriales, soldadura, carpinteria, metalurgia, etc. Algunos ejemplos de esto son:</p>
+            <ul>
+                <li><strong>Lenguaje Tecnologico:</strong> capacitacion para graficar piezas y planos de alta complejidad.</li>
+                <li><strong>Sistemas Tecnologicos:</strong> Fundamentos de electricidad y maquinaria.</li>
+                <li><strong>Procedimientos Tecnicos:</strong> Fundamentos de la carpinteria y metalurgia.</li>
+            </ul>
+
+            <h3>Técnico Quimico</h3>
+            <p class="textos">Este curso se centra en el desarrollo y aprendizaje de tecnicas de manejo, limpieza y desarrollo, con quimicos y otros compuestos. Algunos ejemplos de materias son:</p>
+            <ul>
+				<li>Orientación al detalle</li>
+				<li>Capacidad para instalar, operar y mantener equipos e instrumentos de laboratorio de precisión</li>
+				<li>Capacidad para mantener registros meticulosos de sus experimentos, observaciones y resultados</li>
+            </ul>
+        </section>
+
+        <section id="directivos">
+            <h2 class="titulos">Directivos</h2>
+            <h3 class="direc"> Directora: Novillo Rosana</h3>
+            <h3 class="direc"> Vicedirectora: Ameri Esther y  Maria Sueldo Miuller</h3>
+            <h3 class="direc"> Secretarios: Cano Mariela y Pamela Giuliano</h3>
+            <h3 class="direc"> Jefes de aria: Robledo Joel y Alejo Lopez Montero</h3>
+            <h3 class="direc"> Jefe de Departamento de comunicacionres y ciencias sociales: Vanesa Diaz</h3>
+            <h3 class="direc"> Jefe de Departamento en quimica: Pourtau Agustin</h3>
+            <h3 class="direc"> Jefe de Departamento en electromecanica: Anderson Facundo</h3>
+            <h3 class="direc"> Jefe de Departamento exactas y ciencias naturales: Lagos Fatima</h3>
+        </section>
+        <section id="horarios">
+            <h2 class="titulos">Horarios</h2>
+            <p class="textos">Las clases se dictan de lunes a viernes. Los horarios son los siguientes:</p>
+            <h3>Lunes a Viernes</h3>
+            <ul>
+                <li>07:40 - 09:40</li>
+                <li>10:00 - 12:00</li>
+                <li>13:10 - 15:10:</li>
+                <li>15:30 - 17:30</li>
+                <li>17:40 - 19:40</li>
+                <li>20:50 - 21:50</li>
+            </ul>
+        </section>
+        <section id="contacto">
+            <h2 class="titulos">Contacto</h2>
+            <p class="textos">Teléfono: (0221) 123-4567</p>
+            <p class="textos">Email: info@etn1brandsen.edu.ar</p>
+            <p class="textos">Dirección: Calle calle 119 entre 10 y 11, Brandsen, Buenos Aires, Argentina</p>
+        </section>
+
+        <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a><div id="miCarrusel" class="carousel slide" data-ride="carousel">
+          <!-- Indicadores -->
+          <ol class="carousel-indicators">
+            <li data-target="#miCarrusel" data-slide-to="0" class="active"></li>
+            <li data-target="#miCarrusel" data-slide-to="1"></li>
+            <li data-target="#miCarrusel" data-slide-to="2"></li>
+          </ol>
+        
+          <!-- Contenido del Carrusel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image\fotos escuela\Sin título2.jpg" class="d-block w-100" alt="Primera imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="image\fotos escuela\Sin título7.jpg" class="d-block w-100" alt="Segunda imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="image\fotos escuela\Sin título20.jpg" class="d-block w-100" alt="Tercera imagen">
+            </div>
+          </div>
+        
+          <!-- Controles del Carrusel -->
+          <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+        </section>
+
+        <p class="foot">Desarrollado por alumnos de 6to 5ta</p>
+    </div>
+    
+</body>
+</html>
